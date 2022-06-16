@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Patients</title>
+  <title>listeConsultation</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -25,7 +25,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">
+        <a href="/pages/Patients/listePatients.html" class="nav-link">
           <i class="fas fa-users"></i>
           Patients
         </a>
@@ -103,7 +103,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="../../index2.html" class="nav-link">
+            <a href="index2.html" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Accueil
@@ -298,7 +298,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Patients</h1>
+            <h1 class="m-3">Liste des Consultations</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
           </div><!-- /.col -->
@@ -311,13 +311,13 @@
             <div class="card">
                 <!-- /.card-header -->
                 <div class="card-body">
-                  <table id="example1" class="table table-bordered table-striped">
+                  <table id="example1" class="table table-striped">
                     <thead>
                     <tr>
-                      <th>patients</th>
-                      <th>Sexe</th>
-                      <th>Adresse</th>
-                      <th>Contacts</th>
+                      <th>Consultation</th>
+                      <th><i class="fas fa-user"></i> patient</th>
+                      <th><i class="fas fa-calendar-plus"></i> Date</th>
+                      <th></th>
                       <th></th>
                     </tr>
                     </thead>
@@ -329,7 +329,7 @@
                       </td>
                       <td>Win 95+</td>
                       <td> 4</td>
-                      <td>X</td>
+                      <td><button type="button" class="btn btn-outline-primary right"><i class="fas fa-eye"></i> Détails</button></td>
                     </tr>
                     <tr>
                       <td>Trident</td>

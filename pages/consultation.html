@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Patients</title>
+  <title>Consultation</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -14,9 +14,14 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition sidebar-mini layout-footer-fixed">
+<body class="hold-transition  sidebar-mini layout-fixed layout-navbar-fixed ">
 <div class="wrapper">
 
+  <!-- Preloader 
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+-->
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-dark">
     <!-- Left navbar links -->
@@ -146,17 +151,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/pages/consultation.html" class="nav-link">
+                <a href="pages/charts/chartjs.html" class="nav-link">
                   <p>Nouvelle consultation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/pages/listeConsultation.html" class="nav-link">
+                <a href="/pages/consultation.html" class="nav-link">
                   <p>Liste des Consultations</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/pages/RapportConsultation.html" class="nav-link">
+                <a href="pages/charts/chartjs.html" class="nav-link">
                   <p>Creer un Rapport de consultation</p>
                 </a>
               </li>
@@ -172,7 +177,7 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="/pages/consultation.html" class="nav-link">
                   <p>Nouvelle Hospitalisation</p>
                 </a>
               </li>
@@ -298,7 +303,10 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Patients</h1>
+            <h1 class="m-0">
+                <i class="fas fa-diagnoses"></i>
+                Consultation
+            </h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
           </div><!-- /.col -->
@@ -308,50 +316,41 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <div class="card">
+            <div class="card card-primary">
                 <!-- /.card-header -->
                 <div class="card-body">
-                  <table id="example1" class="table table-bordered table-striped">
-                    <thead>
-                    <tr>
-                      <th>patients</th>
-                      <th>Sexe</th>
-                      <th>Adresse</th>
-                      <th>Contacts</th>
-                      <th></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 4.0
-                      </td>
-                      <td>Win 95+</td>
-                      <td> 4</td>
-                      <td>X</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.0
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.5
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5.5</td>
-                      <td>A</td>
-                    </tr>
-                    </tfoot>
-                  </table>
+                  <div class="form-group">
+                    <label for="exampleInputBorder">patient *</label>
+                    <input type="text" class="form-control form-control-border" id="exampleInputBorder" placeholder=".form-control-border">
+                  </div>
+                  <div class="form-group">
+                <label for="exampleSelectBorder">Type de Consultation *</label>
+                    <select class="custom-select form-control-border" id="exampleSelectBorder">
+                      <option>Consultation Génerale</option>
+                      <option>Consultation Spéciale</option>
+                    </select>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 form-group">
+                        <label for="DateConsul" class="col-sm-2 col-form-label">Date *</label>
+                        <input type="date" class="form-control" id="DateConsul" placeholder="Date">
+                    </div>
+                    <div class="col-6 form-group">
+                        <label for="HeureConsul" class="col-sm-2 col-form-label">Heure *</label>
+                        <input type="time" class="form-control" id="HeureConsul" placeholder="Date">   
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Détails</label>
+                    <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
                 </div>
+                <h4>
+                    <i class="fas fa-money-bill"></i>
+                    Paiement
+                </h4>
+            </div>
+                <!-- /.card-body -->
+              </div>
         </div>
       </section>
   <!-- Main Footer -->
@@ -362,9 +361,6 @@
       <b>Version</b> 1.0
     </div>
   </footer>
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
 </div>
 <!-- ./wrapper -->
 
@@ -390,22 +386,5 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script>
-    $(function () {
-      $("#example1").DataTable({
-        "responsive": true, "lengthChange": false, "autoWidth": false,
-        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-      $('#example2').DataTable({
-        "paging": true,
-        "lengthChange": false,
-        "searching": false,
-        "ordering": true,
-        "info": true,
-        "autoWidth": false,
-        "responsive": true,
-      });
-    });
-  </script>
 </body>
 </html>
