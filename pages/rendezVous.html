@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>listeConsultation</title>
+  <title>Rendez-vous</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -14,9 +14,14 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
-<body class="hold-transition sidebar-mini layout-footer-fixed">
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed ">
 <div class="wrapper">
 
+  <!-- Preloader 
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__wobble" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+-->
   <!-- Navbar -->
   <nav class="main-header navbar navbar-expand navbar-dark">
     <!-- Left navbar links -->
@@ -25,7 +30,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="/pages/Patients/listePatients.html" class="nav-link">
+        <a href="index3.html" class="nav-link">
           <i class="fas fa-users"></i>
           Patients
         </a>
@@ -103,7 +108,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <li class="nav-item">
-            <a href="index2.html" class="nav-link">
+            <a href="../../index2.html" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Accueil
@@ -146,17 +151,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="/pages/consultation.html" class="nav-link">
+                <a href="consultation.html" class="nav-link">
                   <p>Nouvelle consultation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/pages/listeConsultation.html" class="nav-link">
+                <a href="listeConsultation.html" class="nav-link">
                   <p>Liste des Consultations</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/pages/RapportConsultation.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Creer un Rapport de consultation</p>
                 </a>
               </li>
@@ -164,7 +169,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-diagnoses"></i>
+                <i class="nav-icon fas fa-bed"></i>
               <p>
                 Hospitalisation
                 <i class="right fas fa-angle-left"></i>
@@ -172,25 +177,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="Patients/hospitalisation.html" class="nav-link">
                   <p>Nouvelle Hospitalisation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <p>Liste des Hospitalisation</p>
+                <a href="Patients/listeHospitalisation.html" class="nav-link">
+                  <p>Liste des Hospitalisations</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <p>Rapport de consultation</p>
+                <a href="" class="nav-link">
+                  <p>Rapport de Hospitalisations</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-diagnoses"></i>
+              <i class="nav-icon fas fa-calendar-alt"></i>
               <p>
                 Rendez-vous
                 <i class="right fas fa-angle-left"></i>
@@ -198,12 +203,12 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="rendezVous.html" class="nav-link">
                   <p>Nouveau rendez-vous</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="listeRendevous.html" class="nav-link">
                   <p>Liste des Rendez-vous</p>
                 </a>
               </li>
@@ -298,7 +303,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-3">Liste des Consultations</h1>
+            <h1 class="m-3">Rendez-vous</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
           </div><!-- /.col -->
@@ -308,50 +313,54 @@
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
-            <div class="card">
+            <div class="card card-primary">
                 <!-- /.card-header -->
                 <div class="card-body">
-                  <table id="example1" class="table table-striped">
-                    <thead>
-                    <tr>
-                      <th>Consultation</th>
-                      <th><i class="fas fa-user"></i> patient</th>
-                      <th><i class="fas fa-calendar-plus"></i> Date</th>
-                      <th></th>
-                      <th></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 4.0
-                      </td>
-                      <td>Win 95+</td>
-                      <td> 4</td>
-                      <td><button type="button" class="btn btn-outline-primary right"><i class="fas fa-eye"></i> Détails</button></td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.0
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5</td>
-                      <td>C</td>
-                    </tr>
-                    <tr>
-                      <td>Trident</td>
-                      <td>Internet
-                        Explorer 5.5
-                      </td>
-                      <td>Win 95+</td>
-                      <td>5.5</td>
-                      <td>A</td>
-                    </tr>
-                    </tfoot>
-                  </table>
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="form-group">
+                                <label for="exampleInputBorder">Nom du patient</label>
+                                <input type="text" class="form-control form-control-border" id="exampleInputBorder" placeholder=".form-control-border">
+                              </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label>Service : </label>
+              
+                                <div class="input-group">
+                                  <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                                  </div>
+                                  <input type="text" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                                </div>
+                                <!-- /.input group -->
+                              </div>   
+                        </div>
+                    </div>
+                  
+                  <div class="row form-group">
+                    <div class="col-6">
+                        <label for="exampleInputBorder">Date</label>
+                        <input type="date" class="form-control " id="exampleInputBorder" placeholder=".form-control-border">   
+                    </div>
+                    <div class="col-6">
+                        <label for="exampleInputBorder">Heure</label>
+                        <input type="time" class="form-control " id="exampleInputBorder" placeholder=".form-control-border">    
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Détails</label>
+                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                  </div>
+                  </div>
                 </div>
+                
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button"><i class="fas fa-save"></i> Enregistrer</button>
+                
+            </div>
         </div>
       </section>
   <!-- Main Footer -->
@@ -362,9 +371,6 @@
       <b>Version</b> 1.0
     </div>
   </footer>
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
 </div>
 <!-- ./wrapper -->
 
@@ -390,22 +396,5 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script>
-    $(function () {
-      $("#example1").DataTable({
-        "responsive": true, "lengthChange": false, "autoWidth": false,
-        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
-      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
-      $('#example2').DataTable({
-        "paging": true,
-        "lengthChange": false,
-        "searching": false,
-        "ordering": true,
-        "info": true,
-        "autoWidth": false,
-        "responsive": true,
-      });
-    });
-  </script>
 </body>
 </html>
