@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rapport de Consultation</title>
+  <title>Hospitalisation</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -33,13 +33,13 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">
+        <a href="listePatients.html" class="nav-link">
           <i class="fas fa-users"></i>
           Patients
         </a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">
+        <a href="../calendrier.html" class="nav-link">
           <i class="nav-icon fas fa-calendar"></i> 
           Calendrier
         </a>
@@ -88,7 +88,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index2.html" class="brand-link">
+    <a href="../../index2.html" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">CRNPH</span>
     </a>
@@ -201,17 +201,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="../rendezVous.html" class="nav-link">
                   <p>Nouveau rendez-vous</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="../listeRendevous.html" class="nav-link">
                   <p>Liste des Rendez-vous</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="../calendrier.html" class="nav-link">
                   <p>Calendrier</p>
                 </a>
               </li>
@@ -219,7 +219,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-diagnoses"></i>
+              <i class="nav-icon fas fa-money-bill"></i>
               <p>
                 Paiements
                 <i class="right fas fa-angle-left"></i>
@@ -227,17 +227,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouveau Paiement</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Liste des Paiements</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouvelle charge</p>
                 </a>
               </li>
@@ -253,24 +253,16 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouveau Transfert</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Liste des Transfert</p>
                 </a>
               </li>
            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-bed"></i>
-              <p>
-                Gestion des lits
-              </p>
-            </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -288,6 +280,7 @@
               </p>
             </a>
           </li>
+      </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -316,12 +309,12 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputBorder">Nom du patient</label>
-                    <input type="text" class="form-control form-control-border" id="exampleInputBorder" placeholder=".form-control-border">
+                    <input type="text" class="form-control form-control-border" id="exampleInputBorder" >
                   </div>
                   <div class="row form-group">
                     <div class="col-6">
-                        <label for="exampleInputBorder">Numero du lit *</label>
-                        <input type="text" class="form-control " id="exampleInputBorder" placeholder=".form-control-border">   
+                        <label for="NumLit">Numero du lit *</label>
+                        <input type="text" class="form-control " id="NumLit" >   
                     </div>
                     <div class="col-6">
                         <div class="form-group">
@@ -342,16 +335,16 @@
                   </div>
                   <div class="row form-group">
                     <div class="col-5">
-                        <label for="exampleInputBorder">Date d'entrée </label>
-                        <input type="date" class="form-control " id="exampleInputBorder" placeholder=".form-control-border">
+                        <label for="DateEntre">Date d'entrée </label>
+                        <input type="date" class="form-control " id="DateEntre" >
                     </div>
                     <div class="col-4">
-                        <label for="exampleInputBorder">Date de Sortie </label>
-                        <input type="date" class="form-control " id="exampleInputBorder" placeholder=".form-control-border">
+                        <label for="dateSortie">Date de Sortie </label>
+                        <input type="date" class="form-control " id="DateSortie" >
                     </div>
                     <div class="col-3">
-                        <label for="exampleInputBorder">Heure </label>
-                        <input type="time" class="form-control " id="exampleInputBorder" placeholder=".form-control-border">
+                        <label for="HeureHosp">Heure </label>
+                        <input type="time" class="form-control " id="HeureHosp" >
                     </div>
                   </div>
                 </div>
@@ -392,6 +385,7 @@
       //Initialize Select2 Elements
       $('.select2').select2()
     })
-</script>  
+</script>
+</div>  
 </body>
 </html>

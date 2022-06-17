@@ -85,7 +85,7 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index2.html" class="brand-link">
+    <a href="/index2.html" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">CRNPH</span>
     </a>
@@ -151,17 +151,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="/pages/consultation.html" class="nav-link">
                   <p>Nouvelle consultation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="/pages/listeConsultation.html" class="nav-link">
                   <p>Liste des Consultations</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="/pages/RapportConsultation.html" class="nav-link">
                   <p>Creer un Rapport de consultation</p>
                 </a>
               </li>
@@ -169,7 +169,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-diagnoses"></i>
+              <i class="nav-icon fas fa-bed"></i>
               <p>
                 Hospitalisation
                 <i class="right fas fa-angle-left"></i>
@@ -177,25 +177,25 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="hospitalisation.html" class="nav-link">
                   <p>Nouvelle Hospitalisation</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <p>Liste des Hospitalisation</p>
+                <a href="listeHospitalisation.html" class="nav-link">
+                  <p>Liste des Hospitalisations</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
-                  <p>Rapport de consultation</p>
+                <a href="" class="nav-link">
+                  <p>Rapport des hospitalisations</p>
                 </a>
               </li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-diagnoses"></i>
+              <i class="nav-icon fas fa-calendar-check"></i>
               <p>
                 Rendez-vous
                 <i class="right fas fa-angle-left"></i>
@@ -203,17 +203,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="/pages/rendezVous.html" class="nav-link">
                   <p>Nouveau rendez-vous</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="../listeRendevous.html" class="nav-link">
                   <p>Liste des Rendez-vous</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="../calendrier.html" class="nav-link">
                   <p>Calendrier</p>
                 </a>
               </li>
@@ -221,7 +221,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-diagnoses"></i>
+              <i class="nav-icon fas fa-money-bill"></i>
               <p>
                 Paiements
                 <i class="right fas fa-angle-left"></i>
@@ -229,17 +229,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouveau Paiement</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Liste des Paiements</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouvelle charge</p>
                 </a>
               </li>
@@ -255,24 +255,16 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouveau Transfert</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Liste des Transfert</p>
                 </a>
               </li>
            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-bed"></i>
-              <p>
-                Gestion des lits
-              </p>
-            </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -290,6 +282,7 @@
               </p>
             </a>
           </li>
+      </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -303,7 +296,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">
+            <h1 class="m-3">
                 <i class="nav-icon fas fa-user-plus"></i>   
                 Ajouter un patient
             </h1>
@@ -324,57 +317,57 @@
                           <div class="row border-left p-3">
                            
                             <div class="col-3">
-                                <label for="Name">Nom *</label>
-                              <input type="text" class="form-control" id="Name" placeholder=".col-3">
+                                <label for="Name">Nom * :</label>
+                              <input type="text" class="form-control" id="Name" >
                             </div>
                             <div class="col-4">
-                                <label for="Prenom">Prenom *</label>
-                              <input type="text" class="form-control" id="prenom" placeholder=".col-4">
+                                <label for="Prenom">Prenom * :</label>
+                              <input type="text" class="form-control" id="prenom">
                             </div>
                             <div class="col-5">
-                                <label for="sexe">Sexe*</label>
-                              <input type="text" class="form-control" id="sexe" placeholder=".col-5">
+                                <label for="sexe">Sexe* :</label>
+                              <input type="text" class="form-control" id="sexe" >
                             </div>
                           </div>
                           <div class="row border-left p-3">
                             <div class="col-3">
-                                <label for="DateNaiss">Date de naissance</label>
-                              <input type="text" class="form-control" id="DateNaiss" placeholder=".col-3">
+                                <label for="DateNaiss">Date de naissance :</label>
+                              <input type="date" class="form-control" id="DateNaiss" >
                             </div>
                             <div class="col-4">
-                                <label for="Adresse">Adresse</label>
-                              <input type="text" class="form-control" id="Adresse" placeholder=".col-4">
+                                <label for="Adresse">Adresse :</label>
+                              <input type="text" class="form-control" id="Adresse" >
                             </div>
                             <div class="col-5">
-                                <label for="Adresse">Adresse Suite</label>
-                              <input type="text" class="form-control" id="adresse" placeholder=".col-5">
+                                <label for="Adresse">Adresse Suite :</label>
+                              <input type="text" class="form-control" id="adresse">
                             </div>
                           </div>
                           <div class="row border-left p-3">
                             <div class="col-3">
-                                <label for="Région">Région</label>
-                              <input type="text" class="form-control" id="Region" placeholder=".col-3">
+                                <label for="Région">Région :</label>
+                              <input type="text" class="form-control" id="Region">
                             </div>
                             <div class="col-4">
-                                <label for="Pays">Pays</label>
-                              <input type="text" class="form-control" id="pays" placeholder=".col-4">
+                                <label for="Pays">Pays :</label>
+                              <input type="text" class="form-control" id="pays">
                             </div>
                             <div class="col-5">
-                                <label for="SitFamilial">Situation familiale</label>
-                              <input type="text" class="form-control" id="sitFamilial" placeholder=".col-5">
+                                <label for="SitFamilial">Situation familiale :</label>
+                              <input type="text" class="form-control" id="sitFamilial">
                             </div>
                           </div>
                           <div class="row border-left p-3">
                             <div class="col-3">
-                                <label for="Poids">Poids</label>
-                              <input type="text" class="form-control" itemid="poids" id="Name" placeholder=".col-3">
+                                <label for="Poids">Poids :</label>
+                              <input type="text" class="form-control" itemid="poids" id="poids">
                             </div>
                             <div class="col-4">
-                                <label for="Taille">Taille</label>
-                              <input type="text" class="form-control" id="taille" placeholder=".col-4">
+                                <label for="Taille">Taille :</label>
+                              <input type="text" class="form-control" id="taille">
                             </div>
                             <div class="form-group col-5">
-                              <label for="exampleInputFile">Photot</label>
+                              <label for="exampleInputFile">Photo :</label>
                               <div class="input-group">
                                 <div class="custom-file">
                                   <input type="file" class="custom-file-input" id="exampleInputFile">
@@ -392,22 +385,22 @@
                           </h5>
                           <div class="row border-left p-3">
                             <div class="col-6">
-                                <label for="Name">Tel</label>
-                              <input type="text" class="form-control" id="Name" placeholder=".col-3">
+                                <label for="tel">Tel :</label>
+                              <input type="tel" class="form-control" id="Tel" >
                             </div>
                             <div class="col-6">
-                                <label for="Name">Tel2</label>
-                              <input type="text" class="form-control" placeholder=".col-4">
+                                <label for="Name">Tel2 :</label>
+                              <input type="tel" class="form-control" >
                             </div>
                           </div>
                           <div class="row border-left p-3">
                             <div class="col-6">
-                                <label for="Name">Fax</label>
-                              <input type="text" class="form-control" id="Name" placeholder=".col-3">
+                                <label for="Faxe">Fax :</label>
+                              <input type="text" class="form-control" id="Faxe" >
                             </div>
                             <div class="col-6">
-                                <label for="Name">Email</label>
-                              <input type="email" class="form-control" placeholder=".col-4">
+                                <label for="Name">Email :</label>
+                              <input type="email" class="form-control">
                             </div>
                           </div>
                           <h5>
@@ -415,14 +408,18 @@
                             Details
                           </h5>
                           <div class="form-group border-left p-3">
-                            <label>Détails</label>
-                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                            <label>Détails :</label>
+                            <textarea class="form-control" rows="3"></textarea>
                           </div>
                         </div>
                         <!-- /.card-body -->
                       </div>
                 </div>
             </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+              <button class="btn btn-primary me-md-2" type="button"><i class="fas fa-save"></i> Enregistrer</button>
+            </div>
+        </div>
       </section>
   <!-- Main Footer -->
   <footer class="main-footer">
@@ -457,5 +454,6 @@
 <!-- AdminLTE for demo purposes -->
 <script src="../../dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+</div>
 </body>
 </html>

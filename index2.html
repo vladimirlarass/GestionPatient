@@ -140,7 +140,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Editer une ordonnance</p>
                 </a>
               </li>
@@ -200,7 +200,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-diagnoses"></i>
+              <i class="nav-icon fas fa-calendar-check"></i>
               <p>
                 Rendez-vous
                 <i class="right fas fa-angle-left"></i>
@@ -213,12 +213,12 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="pages/listeRendevous.html" class="nav-link">
                   <p>Liste des Rendez-vous</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="pages/calendrier.html" class="nav-link">
                   <p>Calendrier</p>
                 </a>
               </li>
@@ -226,7 +226,7 @@
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-diagnoses"></i>
+              <i class="nav-icon fas fa-money-bill"></i>
               <p>
                 Paiements
                 <i class="right fas fa-angle-left"></i>
@@ -234,17 +234,17 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouveau Paiement</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Liste des Paiements</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouvelle charge</p>
                 </a>
               </li>
@@ -260,24 +260,16 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Nouveau Transfert</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="pages/charts/chartjs.html" class="nav-link">
+                <a href="" class="nav-link">
                   <p>Liste des Transfert</p>
                 </a>
               </li>
            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-bed"></i>
-              <p>
-                Gestion des lits
-              </p>
-            </a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">
@@ -295,6 +287,7 @@
               </p>
             </a>
           </li>
+        </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
@@ -324,12 +317,12 @@
         <div class="row">
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box">
-              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-cog"></i></span>
+              <span class="info-box-icon bg-info elevation-1"><i class="fas fa-user-alt"></i></span>
 
               <div class="info-box-content">
                 <span class="info-box-text">Patients</span>
                 <span class="info-box-number">
-                  100
+                  17865
                 </span>
               </div>
               <!-- /.info-box-content -->
@@ -339,7 +332,7 @@
           <!-- /.col -->
           <div class="col-12 col-sm-6 col-md-3">
             <div class="info-box mb-3">
-              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-thumbs-up"></i></span>
+              <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-calendar-alt"></i></span>
 
               <div class="info-box-content">
                 <span class="info-box-text">Rendez-vous</span>
@@ -350,37 +343,56 @@
             <!-- /.info-box -->
           </div>
           <!-- /.col -->
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="info-box">
+              <span class="info-box-icon bg-gradient-gray elevation-1"><i class="fas fa-bed"></i></span>
 
+              <div class="info-box-content">
+                <span class="info-box-text">Hospitalisation</span>
+                <span class="info-box-number">
+                  105
+                </span>
+              </div>
+              <!-- /.info-box-content -->
+            </div>
+            <!-- /.info-box -->
+          </div>
           <!-- fix for small devices only -->
           <div class="clearfix hidden-md-up"></div>
         </div>
-        <div>
-          <div class="row" >
+        <div class="row" >
             <div class="col-6" >
-                <div class="card card-primary">
+              <div class="card card-primary">
                   <div class="card-header">
-                    <h3 class="card-title">Different Styles</h3>
+                    <h3 class="card-title"></h3>
                   </div>
-                
+              </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <h4>
                   <i class="fas fa-search"></i>
                   Recherche
                 </h4>
-                <div class="form-group">
+                <div class="form-group p-3">
                   <label for="exampleInputBorderWidth2">Acceder directement a la fiche d'un patient </label>
                   <input type="text" class="form-control form-control-border border-width-2" id="exampleInputBorderWidth2" placeholder="nom du patient">
                 </div>
                 <div class="row">
-                  <div class="col-6"><button type="button" class="btn btn-outline-primary btn-block">Liste des Patients</button></div>
-                  <div class="col-6"><button type="button" class="btn btn-outline-primary btn-block">Ajouter un patient</button></div>
+                  <div class="col-6"><button type="button" class="btn btn-outline-primary btn-block"><i class="nav-icon fas fa-users"></i> Liste des Patients</button></div>
+                  <div class="col-6"><button type="button" class="btn btn-outline-primary btn-block"><i class="fas fa-plus"></i> Ajouter un patient</button></div>
                 </div>
               </div>
             </div>
-            <div class="col-4" ></div>
+          <div class="col-6 border-left shadow-lg" >
+            <div class="card card-secondary">
+              <div class="card-header">
+                <h3 class="card-title">Rendez-vous d'aujourd'hui</h3>
+              </div>
           </div>
-        </div>
+          <!-- /.card-header -->
+          <div class="card-body bg-gray-light"> 
+          </div>
+      </div>
       </div>
       </div>
     </section>
@@ -418,5 +430,6 @@
 <script src="dist/js/demo.js"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="dist/js/pages/dashboard2.js"></script>
+</div>
 </body>
 </html>
